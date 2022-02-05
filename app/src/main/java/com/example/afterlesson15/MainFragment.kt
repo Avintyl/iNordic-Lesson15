@@ -6,14 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.afterlesson15.Navigation.navigateToFragmentFromFragment
 import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : Fragment(R.layout.fragment_main) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         btnAnimation.setOnClickListener() {
-            Toast.makeText(view.context, "Я - анимация, я анимируюсь!", Toast.LENGTH_SHORT).show()
+            navigateToFragmentFromFragment(requireActivity(), WebFragment())
+            Toast.makeText(view.context, "Я - анимация, я анимируюсь!", Toast.LENGTH_SHORT)
+                .show()
         }
     }
 }
