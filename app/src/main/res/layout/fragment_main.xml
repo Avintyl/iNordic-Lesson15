@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:shadowRadius="@integer/material_motion_duration_long_2"
+        android:text="@string/press_this"
+        android:textAllCaps="false"
+        android:textSize="36sp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_animation"
+        android:text="@string/btn_animation_one"
+        android:textAllCaps="false"
+        app:backgroundTint="@null" />
+
+</LinearLayout>
